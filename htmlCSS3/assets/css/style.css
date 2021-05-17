@@ -1,0 +1,59 @@
+/* Nunito Google Font */
+/* HTML'e eklemek istersek <link> tag'i olan kismi alacagiz ancak CSS'e eklemek istersek import kismini alacagiz. Bizim style.css dosyamiz
+oldugu icin <style> tag'inin icindeki kodu aliyoruz ve style.css dosyamiza yapistiriyoruz. */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700&display=swap");
+* {
+  text-align: center;
+  margin: 0; /* Bastan tum marginleri sifirla */
+  box-sizing: border-box;
+  /*box-sizing CSS'de kullanilan kutu modelini secmek icin kullanilir.
+  Genelde border-box modeli tercih edilir */
+}
+body {
+  background-image: linear-gradient(rgb(230, 205, 205), rgb(89, 155, 89));
+  font-family: "Nunito", sans-serif;
+}
+
+.input {
+  margin-bottom: 20px;
+  width: 200px;
+  height: 30px;
+}
+h1 {
+  margin-top: 50px;
+}
+.label {
+  display: block; /*inline olan bir eleman 
+  blok hale getirilebilir. inline-block hem satir hem blok calistiriyor. margin vs. kullanilabilir.
+  Normalde inline calisanlara margin atayamazsin */
+  margin-right: 10px;
+}
+
+.btn {
+  background-color: rgb(175, 199, 172);
+  color: black;
+  font-size: 16px;
+  width: 100px;
+  height: 25px;
+  margin-top: 10px;
+  border-radius: 15px;
+  border: 2px solid grey;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: darkgoldenrod;
+}
+.far,
+.fas {
+  font-size: 15px;
+}
+
+i {
+  color: black;
+}
+textarea {
+  width: 200px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  font-size: 14px;
+}

@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Formlar</title>
+  </head>
+  <body>
+    <h1>FORMLAR</h1>
+    <!-- /* kaydet.php ==> bu formun nereye kaydedilecegi ile ilgili */ -->
+    <form action="kaydet.php">
+      <label for="ad" class="label">Adiniz: </label>
+      <input
+        class="input"
+        id="ad"
+        type="text"
+        name="adi"
+        maxlength="20"
+        placeholder="isim giriniz"
+      />
+      <br />
+      <br />
+
+      <label for="sifre" class="label">Sifreniz: </label>
+      <input
+        class="input"
+        id="sifre"
+        type="password"
+        name="ad"
+        value=""
+        required=""
+      />
+      <br />
+      <br />
+
+      <label for="email" class="label">Email: </label>
+      <input class="input" id="email" type="email" name="email" value="" />
+      <br />
+      <br />
+
+      <label class="label" for="sayi">Yasiniz:</label>
+      <input
+        class="input"
+        id="sayi"
+        type="number"
+        name="yas"
+        value=""
+        max="100"
+        min="0"
+      /><br />
+      <label class="label" for="adres">Adres</label>
+      <textarea name="text-alani" id="adres" rows="10"></textarea><br />
+
+      <button class="btn" type="submit">
+        <i class="far fa-save"></i> Gönder
+      </button>
+      <button class="btn" type="reset">
+        <i class="fas fa-trash-alt"></i> Temizle
+      </button>
+    </form>
+  </body>
+</html>
